@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Grand Master Oberon" nameDescription="Grand Master Oberon" race="blood" experience="20000" speed="730" manacost="0" script="boss.lua">
+	<health now="30000" max="30000" />
+	<look type="1072" head="57" body="94" legs="38" feet="67" addons="1" corpse="32557" /> 
+	<targetchange interval="2000" chance="4" />
+	<flags>
+        <flag rewardboss="1" />
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag isblockable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks> <!-- needs to make some new attacks -->
+		<attack name="melee" interval="2000" min="0" max="-1200" />
+		<attack name="falcon holy beam" interval="2000" chance="35" min="-250" max="-1350" />
+		<attack name="groundshaker" interval="2000" chance="25" min="-50" max="-850" />
+	</attacks>
+	<defenses armor="60" defense="60" />
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<loot>
+        <!-- common -->
+        <item name="grant of arms" chance="10100" />
+        <item id="32550" chance="50000" />
+
+        <!-- rare -->
+        <item name="falcon battleaxe" chance="3500" />
+        <item name="falcon bow" chance="3500" />
+        <item name="falcon circlet" chance="3500" />
+        <item name="falcon coif" chance="3000" />
+        <item name="falcon longsword" chance="3000" />
+        <item name="falcon mace" chance="3000" />
+        <item name="falcon rod" chance="3000" />
+        <item name="falcon shield" chance="3000" />
+        <item name="falcon wand" chance="3000" />
+
+        <!-- very rare -->
+        <item name="falcon greaves" chance="2000" />
+        <item name="falcon longsword" chance="2000" />
+	</loot>    
+</monster>

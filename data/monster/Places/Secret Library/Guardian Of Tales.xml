@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Guardian of Tales" nameDescription="an Guardian of Tales" race="blood" experience="4000" speed="270" manacost="0">
+	<health now="5000" max="5000" />
+	<look type="1063" head="92" body="71" legs="19" feet="79" addons="3" corpse="32469" />
+	<targetchange interval="2000" chance="4" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+				<flag isblockable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="1000" />
+		<attack name="lifedrain" interval="2000" chance="8" range="7" radius="5" target="1" min="-135" max="-970">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="redspark" />
+		</attack>
+		<attack name="physical" interval="2000" chance="8" range="7" target="1" min="-90" max="-670">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40" />
+	<elements>
+		<element physicalPercent="1" />
+		<element deathPercent="15" />
+		<element energyPercent="10" />
+		<element icePercent="10" />
+		<element earthPercent="20" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="I'm the one who puts the cute into execute!" />
+		<voice sentence="I'm here to punish!" />
+		<voice sentence="Justice is swift and unavoidable!" />
+		<voice sentence="I'll bring justice!" />
+		<voice sentence="There is excellence in execution!" />
+		<voice sentence="Your sentence is death!" />
+	</voices>
+	<loot>
+		<!-- Comum -->
+		<item id="2152" countmax="50" chance="10000" /> <!-- Platinum Coin -->
+		<item id="2145" countmax="50" chance="90000" /> <!-- Small Diamond -->
+		<item id="33316" countmax="5" chance="80000" /> <!-- Book Page -->
+		<item id="33317" countmax="5" chance="70000" /> <!-- Glowing Rune -->
+		<item id="2239" countmax="5" chance="60000" /> <!-- Burnt Scroll -->
+		
+        <!-- Incomum -->
+		<item id="8901" chance="1000" /> <!-- Spellbook of warding -->
+		<item id="2187" chance="9000" /> <!-- Wand of Inferno -->
+		<item id="2432" chance="8000" /> <!-- Fire Axe -->
+		<item id="5944" chance="7000" /> <!-- Soul Orb -->
+
+		<!-- Semi-Raro -->
+		<item id="7894" chance="4000" /> <!-- Magma Legs -->
+		<item id="7899" chance="3000" /> <!-- Magma Coat -->
+		<item id="2392" chance="2000" /> <!-- Fire Sword -->
+		<item id="10581" chance="1000" /> <!-- Piece Of Hellfire Armor -->
+		
+		<!-- Raro -->
+		<item id="13757" chance="400" /> <!-- Coal -->
+	</loot>
+</monster>

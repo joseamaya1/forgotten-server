@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ink Blob" nameDescription="an Ink Blob" race="blood" experience="4000" speed="270" manacost="0">
+	<health now="5000" max="5000" />
+	<look type="1064" corpse="33344" />
+	<targetchange interval="2000" chance="4" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+				<flag isblockable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="1000" />
+		<attack name="lifedrain" interval="2000" chance="8" range="7" radius="5" target="1" min="-135" max="-790">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="redspark" />
+		</attack>
+		<attack name="physical" interval="2000" chance="8" range="7" target="1" min="-90" max="-550">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40" />
+	<elements>
+		<element physicalPercent="1" />
+		<element deathPercent="15" />
+		<element energyPercent="10" />
+		<element icePercent="10" />
+		<element earthPercent="20" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="I'm the one who puts the cute into execute!" />
+		<voice sentence="I'm here to punish!" />
+		<voice sentence="Justice is swift and unavoidable!" />
+		<voice sentence="I'll bring justice!" />
+		<voice sentence="There is excellence in execution!" />
+		<voice sentence="Your sentence is death!" />
+	</voices>
+	<loot>
+		<!-- Comum -->
+		<item id="2152" countmax="10" chance="10000" /> <!-- Platinum coins -->
+		<item id="9970" countmax="5" chance="90000" /> <!-- Small Topaz -->
+		<item id="2145" countmax="10" chance="80000" /> <!-- Small Diamond -->
+		<item id="10557" countmax="50" chance="70000" /> <!-- Poisonous Slime -->
+		<item id="2600" countmax="10" chance="60000" /> <!-- Inkwell -->
+		<item id="18437" countmax="10" chance="50000" /> <!-- Envenomed Arrow -->
+
+        <!-- Incomum -->
+		<item id="7903" chance="9000" /> <!-- Terra Hood -->
+		<item id="7886" chance="8000" /> <!-- Terra Boots -->
+		<item id="2158" chance="7000" /> <!-- Blue Gem -->
+		<item id="7633" chance="6000" /> <!-- Giant Shimmering Pearl -->
+
+		<!-- Semi-Raro -->
+		<item id="10219" chance="5000" /> <!-- Sacred Tree Amulet -->
+		<item id="8912" chance="4000" /> <!-- Springsprout Rod -->
+		<item id="2200" chance="3000" /> <!-- Protection Amulet -->
+		<item id="2197" chance="2000" /> <!-- Stone Skin Amulet -->
+		<item id="7885" chance="1000" /> <!-- Terra Legs -->
+		<item id="7884" chance="900" /> <!-- Terra Mantle -->
+
+		<!-- Raro -->
+		<item id="11339" chance="800" /> <!-- Clay Lump -->
+		<item id="7887" chance="700" /> <!-- Terra Amulet -->
+
+		<!-- Muito Raro -->
+		<item id="8880" chance="400" /> <!-- Swamplair Armor -->
+	</loot>
+</monster>

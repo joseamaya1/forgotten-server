@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Grand Chaplain Gaunder" nameDescription="a grand chaplain gaunder" race="blood" experience="14000" speed="230" manacost="330" script="boss.lua">
+	<health now="18000" max="18000" />
+	<look type="1071" head="38" body="58" legs="57" feet="67" addons="1" corpse="32559" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag boss="1" />
+        <flag rewardboss="1" />
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="2000" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-700" />
+		<attack name="holy" interval="2000" chance="20" length="7" spread="3" target="1" min="-300" max="-900">
+			<attribute key="areaEffect" value="Holydamage" />
+		</attack>
+
+		<attack name="poison" chance="30" interval="2000" range="0" radius="3" target="0" min="-150" max="-1300">
+		<attribute value="GROUNDSHAKER" key="areaEffect"/>
+		</attack>
+	</attacks>
+	<defenses armor="82" defense="50" />
+	<elements>
+		<element physicalPercent="50" />
+		<element firePercent="15" />
+		<element holyPercent="15" />
+		<element icePercent="15" />
+		<element firePercent="15" />
+		<element deathPercent="15" />
+		<element energyPercent="15" />
+	</elements>
+	<immunities>
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="" />
+		<voice sentence="" />
+		<voice sentence="" />
+	</voices>
+	<loot>
+		<item id="2671" chance="42860" /> <!-- ham -->
+		<item id="5944" chance="28570" /> <!-- Soul orb -->
+		<item id="7590" countmin="1" countmax="3" chance="28570" /> <!-- Great Mana Potion -->
+		<item id="7591" countmin="1" countmax="3" chance="33333" /> <!-- Great Health Potion -->
+		<item id="7368" countmin="1" countmax="10" chance="19050" /> <!-- Assassin star -->
+		<item id="2145" countmin="1" countmax="3" chance="4760" /> <!-- Small Diamond -->
+		<item id="2149" countmin="1" countmax="3" chance="9520" /> <!-- Small Emerald -->
+		<item id="7365" countmin="1" countmax="15" chance="19050" /> <!-- Onyx Arrow -->
+		<item id="7633" chance="4760" /> <!-- Giant Shimmering Pearl -->
+		<item name="damaged armor plates" countmax="3" chance="5330" />
+		<item id="7452" chance="9520" /> <!-- Spiked Squelcher -->
+		<item id="7762" chance="28570" /> <!-- Small Enchanted Amethyst -->
+		<item id="32423" chance="350" /> <!-- falcon longsword -->
+		<item id="32421" chance="350" /> <!-- falcon shield -->
+		
+
+	</loot>
+</monster>

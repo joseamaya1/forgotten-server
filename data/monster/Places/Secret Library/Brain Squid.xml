@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Brain Squid" nameDescription="an Brain Squid" race="blood" experience="4000" speed="270" manacost="0">
+	<health now="5000" max="5000" />
+	<look type="1059" head="17" body="41" legs="41" feet="41" corpse="33328" />
+	<targetchange interval="2000" chance="4" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+				<flag isblockable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="750" />
+		<attack name="lifedrain" interval="2000" chance="8" range="7" radius="5" target="1" min="-135" max="-750">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="redspark" />
+		</attack>
+		<attack name="physical" interval="2000" chance="8" range="7" target="1" min="-90" max="-670">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40" />
+	<elements>
+		<element physicalPercent="1" />
+		<element deathPercent="15" />
+		<element energyPercent="10" />
+		<element icePercent="10" />
+		<element earthPercent="20" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="I'm the one who puts the cute into execute!" />
+		<voice sentence="I'm here to punish!" />
+		<voice sentence="Justice is swift and unavoidable!" />
+		<voice sentence="I'll bring justice!" />
+		<voice sentence="There is excellence in execution!" />
+		<voice sentence="Your sentence is death!" />
+	</voices>
+	<loot>
+		<!-- Comum -->
+		<item id="26172" countmax="5" chance="12600" /> <!-- Instable Proto Matter -->
+		<item id="2252" countmax="50" chance="15000" /> <!-- platinum coin -->
+		<item id="18414" countmax="10" chance="11000" /> <!-- Violet Crystal Shard -->
+		<item id="33317" countmax="10" chance="17200" /> <!-- Glowing Rune -->
+
+        <!-- Incomum -->
+		<item id="18418" chance="9550" /> <!-- Blue Crystal Splinter -->
+		<item id="26179" chance="9000" /> <!-- Energy Ball -->
+		<item id="18419" chance="9100" /> <!-- Cyan Crystal Fragment -->
+		<item id="26029" chance="8500" /> <!-- Ultimate mana potion -->
+		<item id="2153" chance="7500" /> <!-- Violet Gem -->
+		<item id="2147" chance="5800" /> <!-- Small Ruby -->
+		<item id="26166" chance="7651" /> <!-- Odd Organ -->
+		<item id="26175" chance="8901" /> <!-- Frozen Lightning -->
+		<item id="26201" chance="7001" /> <!-- Energy Drink -->
+		<item id="26191" chance="5001" /> <!-- Energy Bar -->
+
+		<!-- Semi-Raro -->
+		<item id="26187" chance="3000" /> <!-- Ring of Green Plasma -->
+		<item id="26190" chance="2000" /> <!-- Ring of Red Plasma -->
+		<item id="26198" chance="1000" /> <!-- Collar of Blue Plasma -->
+		<item id="26199" chance="3200" /> <!-- Collar of Green Plasma  -->
+		<item id="26200" chance="2200" /> <!-- Collar of Red Plasma -->
+		<item id="26198" chance="1200" /> <!-- Collar of Blue Plasma -->
+		<item id="23565" chance="3700" /> <!-- Slime Heart -->
+		<item id="18390" chance="2700" /> <!-- Wand of Defiance -->
+		<item id="10580" chance="1700" /> <!-- Piece of Dead Brain -->
+		<item id="2164" chance="3900" /> <!-- Might Ring -->
+		<item id="7901" chance="2900" /> <!-- Lightning Headband -->
+		<item id="7889" chance="1900" /> <!-- Lightning Pendant -->
+
+		<!-- Raro -->
+		<item id="11355" chance="580" /> <!-- Spellweaver's Robe -->
+
+	</loot>
+</monster>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Cursed Book" nameDescription="a cursed book" race="undead" experience="13090" speed="220">
+	<health now="20000" max="20000" />
+	<look type="1061" head="79" body="100" legs="94" feet="78" addons="1" corpse="33364" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-800" fire="60" />
+		
+	<!-- <attack name="ice" interval="9000" chance="40" range="4" radius="2" target="0" min="-550" max="-750">
+			<attribute key="areaEffect" value="icetornado" />
+	</attack> -->
+	
+	</attacks>
+	<defenses armor="80" defense="15">
+		<defense name="speed" interval="2000" chance="15" speedchange="220" duration="5000">
+			<attribute key="areaEffect" value="greenbubble" />
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element holyPercent="0"/> 
+		<element deathPercent="0"/>
+		<element firePercent="0"/> 		
+		<element energyPercent="0"/> 
+		<element icePercent="-10"/>
+		<element earthPercent="0"/>
+		<element drownPercent="0"/>
+	</elements>
+	<immunities>
+		<immunity death="1" />
+		<immunity earth="1" />
+		<immunity paralyze="1" />
+		<immunity lifedrain="1" />
+		<immunity drunk="1" />
+		<immunity drown="1" />
+		<immunity invisible="1" />
+	</immunities>
+
+	<voices interval="5000" chance="10">
+	
+	</voices>
+	<loot>
+		<!--Comum-->
+		<item name="Book Page" chance="19660" countmax="7" />
+		<item name="Platinum Coin" chance="19660" countmax="28" />
+		<item name="Concentrated Demonic Blood" chance="19660" countmax="1" />
+		<item name="Demonic Essence" chance="19660" countmax="1" />
+
+
+        <!--Incomum-->
+        <item name="Small Amethyst" chance="12550" countmax="1" />
+        <item id="2419" chance="12550" countmax="1" /> <!-- Scimitar -->
+		<item name="Silken Bookmark" chance="12550" countmax="1" />
+		<item name="Magma Coat" chance="12550" countmax="1" />
+		<item name="Guardian Shield" chance="12550" countmax="1" />
+		<item name="Soul Orb" chance="12550" countmax="1" />
+
+        <!--Semi-raro-->
+        <item name="Necrotic Rod" chance="1980" />
+        <item name="Magma Monocle" chance="1980" />
+		<item name="Death Ring" chance="1980" />
+
+        <!--Raro-->
+        <item name="Shadow Sceptre" chance="480" />
+		<item name="Stealth Ring" chance="480" />
+
+        <!--Muito raro-->
+        <!-- <item name="Demonbone Amulet" chance="480" /> -->
+
+
+	</loot>
+</monster>

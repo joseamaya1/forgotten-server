@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ice Dragon" nameDescription="an ice dragon" race="blood" experience="2300" speed="210" manacost="290">
+	<health now="2500" max="2500" />
+	<look type="947" corpse="27853" />
+	<targetchange interval="5000" chance="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="0" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="57" attack="67" />
+		<attack name="lifedrain" interval="2000" chance="10" target="0" length="8" spread="3" min="-175" max="-380">
+			<attribute key="areaEffect" value="poff" />
+		</attack>
+		<attack name="ice" interval="2000" chance="5" radius="3" target="0" min="-100" max="-200">
+			<attribute key="areaEffect" value="icetornado" />
+		</attack>
+		<attack name="ice" interval="2000" chance="10" target="1" radius="4" min="-50" max="-140">
+			<attribute key="areaEffect" value="icearea" />
+		</attack>
+		<attack name="physical" interval="2000" chance="5" target="0" length="1" spread="0" min="-200" max="-350">
+			<attribute key="areaEffect" value="poff" />
+		</attack>
+		<attack name="speed" interval="2000" chance="20" target="1" radius="4" speedchange="-800" duration="4000">
+			<attribute key="areaEffect" value="icearea" />
+		</attack>
+	</attacks>
+	<defenses armor="10" defense="10">
+		<defense name="healing" interval="2000" chance="10" min="150" max="200">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="350" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="20" />
+		<element icePercent="44" />
+		<element energyPercent="-32" />
+		<element deathPercent="-20" />
+		<element icePercent="100" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<loot>
+		<item id="2148" countmax="250" chance="50320" /><!-- gold coin -->
+		<item name="dragon ham" countmax="5" chance="21478" />
+		<item name="shiver arrow" countmax="18" chance="17877" />
+		<item name="dragon blood" countmax="3" chance="6788" />
+		<item name="dragon tongue" countmax="2" chance="5899" />
+		<item name="glacier amulet" chance="3703" />
+		<item name="glacier mask" chance="2998" />
+		<item name="dragon scale mail" chance="650" />
+	</loot>
+</monster>

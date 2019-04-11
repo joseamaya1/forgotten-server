@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Animated Feather" nameDescription="an animated feather" race="undead" experience="13800" speed="110" manacost="0">
+	<health now="13000" max="13000" />
+	<look type="1058" corpse="33325" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-200" />
+		<attack name="physical" interval="1000" chance="15" range="7" min="0" max="-180">
+			<attribute key="shootEffect" value="snowball" />
+			<attribute key="areaEffect" value="poff" />
+		</attack>
+		<attack name="ice" interval="1000" chance="10" range="7" min="0" max="-180">
+			<attribute key="shootEffect" value="smallice" />
+			<attribute key="areaEffect" value="iceattack" />
+		</attack>
+		<attack name="ice" interval="1000" chance="10" length="3" spread="2" min="0" max="-175">
+			<attribute key="areaEffect" value="iceattack" />
+		</attack>
+		<attack name="ice" interval="1000" chance="12" range="7" radius="3" min="-230" max="-480">
+			<attribute key="shootEffect" value="smallice" />
+			<attribute key="areaEffect" value="icetornado" />
+		</attack>
+	</attacks>
+	<defenses armor="28" defense="33" />
+	<elements>
+		<element icePercent="100" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Scribble scribble" />
+		<voice sentence="*scraaaatch*" />
+	</voices>
+	<loot>
+		<item name="energy ring" chance="100000" />
+		<item name="platinum coin" countmax="50" chance="8700" />
+		<item name="glacier amulet" chance="9000" />
+		<item name="hailstorm rod" chance="8800" />
+		<item name="golden mug" chance="10000" />
+		<item name="glowing rune" countmax="10" chance="8600" />
+		<item name="quill" chance="6000" />
+		<item name="glacier mask" chance="9660" />
+		<item name="quill" chance="6000" />
+		<item name="life crystal" chance="7200" />
+		<item name="small diamond" chance="7880" />
+		<item id="7441" chance="30000" /> <!-- Ice Cube -->
+		<item name="small sapphire" countmax="5" chance="10000" />
+		<item name="shard" chance="6650" />
+		<item name="great mana potion" chance="8080" />
+	</loot>
+</monster>

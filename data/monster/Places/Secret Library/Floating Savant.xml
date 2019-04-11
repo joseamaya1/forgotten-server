@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Floating Savant" nameDescription="an Floating Savant" race="blood" experience="4000" speed="270" manacost="0">
+	<health now="5000" max="5000" />
+	<look type="1063" head="113" body="94" legs="97" feet="78" addons="0" corpse="33340" />
+	<targetchange interval="2000" chance="4" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+				<flag isblockable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="1000" />
+		<attack name="lifedrain" interval="2000" chance="8" range="7" radius="5" target="1" min="-235" max="-590">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="redspark" />
+		</attack>
+		<attack name="physical" interval="2000" chance="8" range="7" target="1" min="-200" max="-400">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40" />
+	<elements>
+		<element physicalPercent="1" />
+		<element deathPercent="15" />
+		<element energyPercent="10" />
+		<element icePercent="10" />
+		<element earthPercent="20" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="I'm the one who puts the cute into execute!" />
+		<voice sentence="I'm here to punish!" />
+		<voice sentence="Justice is swift and unavoidable!" />
+		<voice sentence="I'll bring justice!" />
+		<voice sentence="There is excellence in execution!" />
+		<voice sentence="Your sentence is death!" />
+	</voices>
+	<loot>
+		<!-- Comum -->
+		<item id="2156" countmax="50" chance="1000" /> <!-- Red Gem -->
+		<item id="5911" countmax="50" chance="9000" /> <!-- Red Piece of Cloth -->
+		
+        <!-- Incomum -->
+		<item id="18420" chance="8000" /> <!-- Red Crystal Fragment -->
+		<item id="11237" chance="7000" /> <!-- Book of Necromantic Rituals -->
+		<item id="6558" chance="6000" /> <!-- Concentrated Demonic Blood -->
+		<item id="6500" chance="5000" /> <!-- Demonic Essence -->
+		<item id="7760" chance="4000" /> <!-- Small Enchanted Ruby -->
+		
+		<!-- Semi-Raro -->
+		<item id="2553" chance="2000" /> <!-- Pick -->
+
+		<!-- Muito Raro -->
+		<item id="9969" chance="1000" /> <!-- Black Skull -->
+		<item id="32648" chance="400" /> <!-- Sample of Monster Blood -->
+	</loot>
+</monster>

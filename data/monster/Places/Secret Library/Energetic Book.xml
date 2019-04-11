@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Energetic Book" nameDescription="an Energetic Book" race="blood" experience="4000" speed="270" manacost="0">
+	<health now="5000" max="5000" />
+	<look type="1061" head="0" body="91" legs="85" feet="0" corpse="32477" />
+	<targetchange interval="2000" chance="4" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+				<flag isblockable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="840" />
+		<attack name="lifedrain" interval="2000" chance="8" range="7" radius="5" target="1" min="-135" max="-790">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="redspark" />
+		</attack>
+		<attack name="physical" interval="2000" chance="8" range="7" target="1" min="-90" max="-500">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40" />
+	<elements>
+		<element physicalPercent="1" />
+		<element deathPercent="15" />
+		<element energyPercent="10" />
+		<element icePercent="10" />
+		<element earthPercent="20" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="I'm the one who puts the cute into execute!" />
+		<voice sentence="I'm here to punish!" />
+		<voice sentence="Justice is swift and unavoidable!" />
+		<voice sentence="I'll bring justice!" />
+		<voice sentence="There is excellence in execution!" />
+		<voice sentence="Your sentence is death!" />
+	</voices>
+	<loot>
+		<!-- Comum -->
+		<item id="33317" countmax="50" chance="10000" /> <!-- Glowing Rune -->
+		<item id="33316" countmax="5" chance="90000" /> <!-- Book Page -->
+		<item id="2152" countmax="50" chance="80000" /> <!-- Platinum Coins -->
+
+        <!-- Incomum -->
+		<item id="33313" chance="6000" /> <!-- Silken Bookmark -->
+		<item id="26029" chance="5000" /> <!-- Ultimate Mana Potion -->
+		<item id="8473" chance="4000" /> <!-- Ultimate Health Potion -->
+		<item id="26179" chance="3000" /> <!-- Energy Ball -->
+
+		<!-- Semi-Raro -->
+		<item id="7901" chance="2000" /> <!--Lightning Headband -->
+		<item id="18390" chance="1000" /> <!-- Wand of Defiance -->
+		<item id="11355" chance="900" /> <!-- Spellweaver's Robe -->
+		<item id="7889" chance="800" /> <!-- Lightning Pendant -->
+		<item id="7893" chance="700" /> <!-- Lightning Boots -->
+		<item id="2164" chance="600" /> <!-- Might Ring -->
+
+
+		<!-- Raro -->
+		<item id="7895" chance="500" /> <!-- Lightning Legs -->
+		<item id="7407" chance="400" /> <!-- Haunted Blade -->
+	</loot>
+</monster>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The First Dragon" nameDescription="The First Dragon" race="blood" experience="100000" speed="850" manacost="290">
+	<health now="75000" max="75000" />
+	<look type="947" addons="3" head="113" body="117" legs="119" feet="80" />
+	<targetchange interval="5000" chance="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="1" />
+		<flag pushable="1" />
+		<flag canpushitems="0" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-1200" />
+		<attack name="fire" interval="2000" chance="20" radius="6" target="0" min="-200" max="-750">
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+		<attack name="physical" interval="2000" chance="20" target="0" radius="8" min="-200" max="-950">
+			<attribute key="areaEffect" value="poff" />
+		</attack>
+		<attack name="fire" interval="2000" chance="20" target="0" length="8" spread="0" min="-150" max="-720">
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+		<attack name="fire" interval="2000" chance="20" target="1" radius="9" min="-90" max="-880">
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+		<attack name="speed" interval="2000" chance="20" target="1" radius="4" speedchange="-950" duration="800">
+			<attribute key="areaEffect" value="poff" />
+		</attack>
+		<attack name="first dragon teleport" interval="2000" chance="5"/>
+	</attacks>
+	<defenses armor="15" defense="35">
+		<defense name="healing" interval="2000" chance="15" min="150" max="1250">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="15" />
+		<element earthPercent="60" />
+		<element firePercent="20" />
+		<element deathPercent="-5" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+</monster>

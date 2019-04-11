@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Squid Warden" nameDescription="an Squid Warden" race="blood" experience="4000" speed="270" manacost="0">
+	<health now="5000" max="5000" />
+	<look type="1059" head="9" body="21" legs="3" feet="38" corpse="32485" />
+	<targetchange interval="2000" chance="4" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+				<flag isblockable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="980" />
+		<attack name="lifedrain" interval="2000" chance="8" range="7" radius="5" target="1" min="-135" max="-680">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="redspark" />
+		</attack>
+		<attack name="physical" interval="2000" chance="8" range="7" target="1" min="-90" max="-450">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40" />
+	<elements>
+		<element physicalPercent="1" />
+		<element deathPercent="15" />
+		<element energyPercent="10" />
+		<element icePercent="10" />
+		<element earthPercent="20" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="I'm the one who puts the cute into execute!" />
+		<voice sentence="I'm here to punish!" />
+		<voice sentence="Justice is swift and unavoidable!" />
+		<voice sentence="I'll bring justice!" />
+		<voice sentence="There is excellence in execution!" />
+		<voice sentence="Your sentence is death!" />
+	</voices>
+	<loot>
+		<!-- Comum -->
+		<item id="2146" countmax="10" chance="10000" /> <!-- Small Sapphire -->
+		<item id="2152" countmax="10" chance="9000" /> <!-- Platinum coins -->
+		
+        <!-- Incomum -->
+		<item id="7897" chance="8000" /> <!--Glacier Robe -->
+		<item id="7902" chance="7000" /> <!-- Glacier Mask -->
+		<item id="7896" chance="6000" /> <!-- Glacier Kilt -->
+		<item id="7588" chance="5000" /> <!-- Strong Health Potion -->
+		<item id="10578" chance="4000" /> <!-- Frosty Heart -->
+		<item id="33317" chance="3800" /> <!-- Glowing Rune -->
+		<item id="7441" chance="2560" /> <!-- Ice Cube -->
+		<item id="2396" chance="1010" /> <!-- Ice Rapier -->
+	</loot>
+</monster>

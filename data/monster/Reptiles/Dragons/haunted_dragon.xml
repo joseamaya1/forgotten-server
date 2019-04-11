@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Haunted Dragon" nameDescription="a haunted dragon" race="blood" experience="6500" speed="350" manacost="290">
+	<health now="6500" max="6500" />
+	<look type="231" corpse="6306" />
+	<targetchange interval="5000" chance="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="0" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="physical" interval="2000" chance="5" range="7" radius="4" target="1" min="-100" max="-600">
+			<attribute key="areaEffect" value="redspark" />
+		</attack>
+		<attack name="poisoncondition" interval="2000" chance="4" target="1" range="5" min="-120" max="-1280">
+			<attribute key="areaEffect" value="bats" />
+		</attack>
+		<attack name="death" interval="2000" chance="10" range="7" min="-225" max="-700">
+			<attribute key="shootEffect" value="suddendeath" />
+			<attribute key="areaEffect" value="smallclouds" />
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="10" length="8" spread="3" min="-300" max="-700">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="10" radius="3" min="-180" max="-500">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="death" interval="2000" chance="10" length="8" spread="3" min="-120" max="-450">
+			<attribute key="areaEffect" value="bluebubble" />
+		</attack>
+		<attack name="ghastly dragon curse" interval="2000" chance="10" />
+	</attacks>
+	<defenses armor="30" defense="40" />
+	<elements>
+		<element holyPercent="-20" />
+		<element earthPercent="100" />
+		<element deathPercent="100" />
+	</elements>
+	<loot>
+		<item id="2148" countmax="159" chance="50320" /><!-- gold coin -->
+		<item id="2152" countmax="2" chance="50320" /><!-- platinun coin -->
+		<item name="ancient coin" countmax="2" chance="20150" />
+		<item id="7368" countmax="5" chance="15741" /> <!-- assassin star -->
+		<item id="2144" countmax="2" chance="12111" /> <!-- black pearl -->
+		<item id="7590" countmax="2" chance="9417" /> <!-- great mana potion -->
+		<item id="7591" countmax="2" chance="9417" /> <!-- great health potion -->
+		<item id="2146" countmax="2" chance="7466" /> <!-- small sapphire -->
+		<item name="dark armor" chance="8781" />
+		<item name="dark shield" chance="7577" />
+		<item id="6300" chance="6544" /> <!-- death ring -->
+		<item name="demonic essence" countmax="3" chance="5556" />
+		<item name="dragon necklace" chance="5157" />
+		<item name="hardened bone" countmax="3" chance="3421" />
+		<item name="life crystal" chance="3101" />
+		<item name="unholy bone" chance="4777" />
+		<item name="dragon slayer" chance="3879" />
+		<item id="11355" chance="2014" /> <!-- spellweaver's robe -->
+		<item name="red gem" chance="3978" />
+		<item name="skullcracker armor" chance="969" />
+	</loot>
+</monster>

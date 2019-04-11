@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cursed Book" nameDescription="an Cursed Book" race="blood" experience="4000" speed="270" manacost="0">
+	<health now="5000" max="5000" />
+	<look type="1061" head="79" body="99" legs="94" feet="94" corpse="33336" />
+	<targetchange interval="2000" chance="4" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+				<flag isblockable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="1000" />
+		<attack name="lifedrain" interval="2000" chance="8" range="7" radius="5" target="1" min="-135" max="-590">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="redspark" />
+		</attack>
+		<attack name="physical" interval="2000" chance="8" range="7" target="1" min="-90" max="-780">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40" />
+	<elements>
+		<element physicalPercent="1" />
+		<element deathPercent="15" />
+		<element energyPercent="10" />
+		<element icePercent="10" />
+		<element earthPercent="20" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="I'm the one who puts the cute into execute!" />
+		<voice sentence="I'm here to punish!" />
+		<voice sentence="Justice is swift and unavoidable!" />
+		<voice sentence="I'll bring justice!" />
+		<voice sentence="There is excellence in execution!" />
+		<voice sentence="Your sentence is death!" />
+	</voices>
+	<loot>
+		<!-- Comum -->
+		<item id="33316" countmax="5" chance="10000" /> <!-- Book Page -->
+		<item id="9970" countmax="50" chance="90000" /> <!-- Small Topaz -->
+		<item id="1294" countmax="10" chance="80000" /> <!-- Small Stone -->
+		<item id="2145" countmax="10" chance="70000" /> <!-- Small Diamond -->
+		<item id="33313" countmax="10" chance="60000" /> <!-- Silken Bookmark -->
+		<item id="2152" countmax="10" chance="50000" /> <!-- Platinum coins -->
+
+        <!-- Incomum -->
+		<item id="7387" chance="4000" /> <!-- Diamond Sceptre -->
+		<item id="7903" chance="3000" /> <!-- Terra Hood -->
+		<item id="7886" chance="2000" /> <!-- Terra Boots -->
+		<item id="2200" chance="1000" /> <!-- Protection Amulet -->
+
+		<!-- Semi-Raro -->
+		<item id="10219" chance="900" /> <!-- Sacred Tree Amulet -->
+		<item id="8912" chance="800" /> <!-- Springsprout Rod -->
+		<item id="2197" chance="700" /> <!-- Stone Skin AMulet -->
+		<item id="7887" chance="600" /> <!-- Terra Amulet -->
+		<item id="7885" chance="500" /> <!-- Terra Legs -->
+		<item id="7884" chance="400" /> <!-- Terra Mantle -->
+
+
+		<!-- Raro -->
+		<item id="8880" chance="300" /> <!-- Swamplair Armor -->
+	</loot>
+</monster>

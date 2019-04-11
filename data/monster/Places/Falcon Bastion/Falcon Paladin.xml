@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Falcon Paladin" nameDescription="a falcon paladin" race="blood" experience="8200" speed="570" manacost="0">
+	<health now="8500" max="8500" />
+	<look type="1071" head="57" body="94" legs="38" feet="67" addons="2" corpse="32427" /> 
+	<targetchange interval="2000" chance="4" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag isblockable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="2" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks> <!-- attacks are wrong, distance from player unknown needs to be fixed -->
+		<attack name="melee" interval="2000" min="0" max="-700" />
+		<attack name="physical" interval="2000" chance="50" range="7" min="0" max="-400">
+			<attribute key="shootEffect" value="infernalbolt" />
+		</attack>
+		<attack name="falcon holy beam" interval="2000" chance="5" min="-150" max="-420" />
+		<attack name="ethereal spear" interval="2000" chance="25" min="-350" max="-750" />
+	</attacks>
+	<defenses armor="30" defense="35">
+		<defense name="healing" interval="1000" chance="14" min="100" max="300">
+			<attribute key="areaEffect" value="greenshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="20" />
+		<element deathPercent="15" />
+		<element holyPercent="-20" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="Repent heretic!" />
+		<voice sentence="Uuunngh!" />
+	</voices>
+	<loot>
+    	<item name="platinum coin" countmax="8" chance="10000" />
+        <item name="assassin star" countmax="12" chance="8000" />
+		<item name="small diamond" countmax="3" chance="9000" />
+		<item name="small ruby" countmax="2" chance="5000" />
+		<item name="small emerald" countmax="2" chance="9000" />
+		<item name="small amethyst" countmax="4" chance="9000" />
+		<item name="great spirit potion" countmax="4" chance="4500" />
+		<item name="red gem" chance="4100" />
+        <item name="small topaz" countmax="3" chance="4010" />
+        <item name="onyx arrow" countmax="22" chance="5050" />
+        <item name="violet gem" chance="4050" />
+        <item name="green gem" chance="3920" />
+        <item id="7632" chance="3170" /> <!-- Giant Shimmering Pearl -->
+        <item name="damaged armor plates" chance="3080" />
+        <item name="falcon crest" chance="2520" />
+        <item name="mastermind shield" chance="400" />
+        <item name="golden armor" chance="380" />
+	</loot>    
+</monster>

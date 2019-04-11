@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Grand Canon Dominus" nameDescription="a grand canon dominus" race="blood" experience="11000" speed="230" manacost="330" script="boss.lua">
+	<health now="17000" max="17000" />
+	<look type="1071" head="38" body="58" legs="77" feet="86" addons="0" corpse="32437" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag boss="1" />
+        <flag rewardboss="1" />
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="2000" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-650" />
+		
+		<attack name="death" chance="30" interval="2000" range="3" length="3" radius="3" target="1" min="-900" max="-1050">
+		<attribute value="mortArea" key="areaEffect"/>
+		</attack>
+		<attack name="Energy Wave" chance="30" interval="2000" range="3" length="3" radius="3" target="1" min="-400" max="-600"/>
+
+		
+		<attack name="holy" chance="30" interval="2000" range="3" length="3" radius="3" target="1" min="-150" max="-600">
+		<attribute value="HOLYAREA" key="areaEffect"/>
+		</attack>
+
+		<attack name="energy" chance="30" interval="2000" range="3" length="3" radius="3" target="1" min="-650" max="-850">
+		<attribute value="energy" key="shootEffect"/>
+		</attack>
+	</attacks>
+	<defenses armor="82" defense="50" />
+	<elements>
+		<element physicalPercent="30" />
+		<element energyPercent="30" />
+		<element earthPercent="15" />
+		<element icePercent="15" />
+		<element firePercent="15" />
+		<element deathPercent="50" />
+		<element holyPercent="15" />
+	</elements>
+	<immunities>
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
+	</immunities>
+	<!--<voices interval="5000" chance="10">
+		<voice sentence="" />
+		<voice sentence="" />
+		<voice sentence="" />
+	</voices>-->
+	<loot>
+		<item id="2152" countmax="6" chance="68180"/><!-- platinum coin -->
+		<item id="7590" countmin="1" countmax="3" chance="25000" /> <!-- Great Mana Potion -->
+		<item id="7591" countmin="1" countmax="3" chance="27270" /> <!-- Great Health Potion -->
+		<item id="7368" countmin="1" countmax="10" chance="15540" /> <!-- Assassin star -->
+		<item id="2145" countmin="1" countmax="3" chance="12970" /> <!-- Small Diamond -->
+		<item id="2149" countmin="1" countmax="3" chance="13920" /> <!-- Small Emerald -->
+		<item id="9970" countmin="1" countmax="3" chance="14730" /> <!-- Small Topaz -->
+		<item id="2150" countmin="1" countmax="3" chance="14050" /> <!-- Small Amethyst -->
+		<item id="2147" countmin="1" countmax="3" chance="13240" /> <!-- small ruby -->
+		<item id="7365" countmin="1" countmax="15" chance="10000" /> <!-- Onyx Arrow -->
+		<item id="2156" chance="1760" /> <!-- Red Gem -->
+		<item id="2153" chance="810" /> <!-- Violet Gem -->
+		<item id="7633" chance="1490" /> <!-- Giant Shimmering Pearl -->
+		<item id="32520" chance="1350" /> <!-- Falcon Crest -->
+		<item id="32518" chance="810" /> <!-- Patch of Fine Cloth -->
+		<item name="damaged armor plates" countmax="3" chance="5330" />
+		<item id="2466" chance="860" /> <!-- Golden Armor -->
+		<item id="2514" chance="890" /> <!-- mastermind shield -->
+		<item id="2155" chance="3500" /> <!-- Green Gem -->
+		<item id="32419" chance="350" /> <!-- falcon plate -->
+		<item id="32418" chance="350" /> <!-- falcon bow -->
+		<item id="32417" chance="350" /> <!-- falcon wand -->
+	</loot>
+</monster>

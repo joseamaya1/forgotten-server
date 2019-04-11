@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Knowledge Elemental" nameDescription="an Knowledge Elemental" race="blood" experience="4000" speed="270" manacost="0">
+	<health now="5000" max="5000" />
+	<look type="1065" corpse="33348" />
+	<targetchange interval="2000" chance="4" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+				<flag isblockable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="1000" />
+		<attack name="lifedrain" interval="2000" chance="8" range="7" radius="5" target="1" min="-135" max="-890">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="redspark" />
+		</attack>
+		<attack name="physical" interval="2000" chance="8" range="7" target="1" min="-90" max="-780">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40" />
+	<elements>
+		<element physicalPercent="1" />
+		<element deathPercent="15" />
+		<element energyPercent="10" />
+		<element icePercent="10" />
+		<element earthPercent="20" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="I'm the one who puts the cute into execute!" />
+		<voice sentence="I'm here to punish!" />
+		<voice sentence="Justice is swift and unavoidable!" />
+		<voice sentence="I'll bring justice!" />
+		<voice sentence="There is excellence in execution!" />
+		<voice sentence="Your sentence is death!" />
+	</voices>
+	<loot>
+		<!-- Comum -->
+		<item id="2152" countmax="10" chance="15000" /> <!-- Platinum coins -->
+		<item id="33316" countmax="5" chance="12000" /> <!-- Book Page -->
+		<item id="2150" countmax="10" chance="11000" /> <!-- Small Amethyst -->
+		<item id="33313" countmax="50" chance="10200" /> <!-- Silken Bookmark -->
+		<item id="33317" countmax="10" chance="9000" /> <!-- Glowing Rune -->
+		<item id="33314" countmax="10" chance="8000" /> <!-- Quill -->
+
+        <!-- Incomum -->
+		<item id="2189" chance="7000" /> <!-- Wand of Cosmic Energy -->
+		<item id="7449" chance="6000" /> <!-- Crystal Sword -->
+		<item id="26029" chance="5000" /> <!-- Ultimate Mana Potion -->
+		<item id="8473" chance="4000" /> <!-- Ultimate Health Potion -->
+		<item id="7620" chance="3000" /> <!-- Mana Potion -->
+		<item id="2515" chance="2000" /> <!-- Guardian Shield -->
+		<item id="7838" chance="1000" /> <!-- Flash Arrow -->
+		<item id="2167" chance="900" /> <!-- Energy Ring -->
+		<item id="2399" chance="800" /> <!-- Throwing Star -->
+
+		<!-- Semi-Raro -->
+		<item id="6093" chance="700" /> <!-- Crystal Ring -->
+		<item id="2164" chance="800" /> <!-- Might Ring -->
+		<item id="2170" chance="600" /> <!-- Silver Amulet -->
+		<item id="2425" chance="500" /> <!-- Obsidian Lance -->
+		<item id="18390" chance="400" /> <!-- Wand of Defiance -->
+		<item id="7889" chance="450" /> <!-- Lightning Pendant -->
+
+		<!-- Raro -->
+		<item id="11355" chance="300" /> <!-- Spellweaver's Robe -->
+	</loot>
+</monster>

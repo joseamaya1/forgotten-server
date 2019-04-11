@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Energuardian of Tales" nameDescription="an Energuardian of Tales" race="blood" experience="4000" speed="270" manacost="0">
+	<health now="5000" max="5000" />
+	<look type="1063" head="86" body="66" legs="100" feet="93" addons="3" corpse="32570" />
+	<targetchange interval="2000" chance="4" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+				<flag isblockable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="870" />
+		<attack name="lifedrain" interval="2000" chance="8" range="7" radius="5" target="1" min="-135" max="-500">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="redspark" />
+		</attack>
+		<attack name="physical" interval="2000" chance="8" range="7" target="1" min="-90" max="-400">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40" />
+	<elements>
+		<element physicalPercent="1" />
+		<element deathPercent="15" />
+		<element energyPercent="10" />
+		<element icePercent="10" />
+		<element earthPercent="20" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="I'm the one who puts the cute into execute!" />
+		<voice sentence="I'm here to punish!" />
+		<voice sentence="Justice is swift and unavoidable!" />
+		<voice sentence="I'll bring justice!" />
+		<voice sentence="There is excellence in execution!" />
+		<voice sentence="Your sentence is death!" />
+	</voices>
+	<loot>
+		<!-- Comum -->
+		<item id="2150" countmax="50" chance="1000" /> <!-- Small Amethyst -->
+		<item id="33317" countmax="50" chance="9000" /> <!-- Glowing Rune -->
+		<item id="33316" countmax="5" chance="8000" /> <!-- Book Page -->
+		
+
+        <!-- Incomum -->
+		<item id="7895" chance="7000" /> <!-- Lightning legs -->
+		<item id="8901" chance="6000" /> <!-- Spellbook of warding -->
+		<item id="8920" chance="5000" /> <!-- Wand of Starstorm -->
+		<item id="26029" chance="4000" /> <!-- Ultimate Mana Potion -->
+		<item id="8473" chance="3000" /> <!-- Ultimate Healing Potion -->
+		<item id="7838" chance="2000" /> <!-- Flash Arrow -->
+
+		<!-- Semi-Raro -->
+		<item id="7889" chance="1000" /> <!-- Lightning Pendant -->
+		<item id="2164" chance="900" /> <!-- Might Ring -->
+		<item id="2171" chance="800" /> <!-- Platinum Amulet -->
+		<item id="11355" chance="700" /> <!-- Spellweaver's Robe -->
+		<item id="18390" chance="600" /> <!-- Wand of Defiance -->
+
+		<!-- Raro -->
+		<item id="10221" chance="400" /> <!-- Shockwave Amulet -->
+	</loot>
+</monster>

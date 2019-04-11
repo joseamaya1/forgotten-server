@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Grand Commander Soeren" nameDescription="a grand commander soeren" race="blood" experience="12000" speed="230" manacost="330" script="boss.lua">
+	<health now="17000" max="17000" />
+	<look type="1071" head="38" body="82" legs="38" feet="94" addons="2" corpse="32433" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag boss="1" />
+        <flag rewardboss="1" />
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="2000" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="0" />
+	</flags>
+	<attacks>
+	<attack name="melee" interval="2000" min="0" max="-800" />
+
+		<attack name="energy" chance="30" interval="2000"  target="1" min="-700" max="-1300">
+			<attribute key="shootEffect" value="infernalbolt" />
+		</attack>		
+		<attack name="holy" interval="2000" chance="20"  target="1" min="-500" max="-570">
+			<attribute key="shootEffect" value="Holy" />
+		</attack>
+		<attack name="Sudden Death" chance="30" interval="2000"  min="-530" max="-830"/>
+
+	</attacks>
+	<defenses armor="82" defense="50" />
+	<elements>
+		<element physicalPercent="50" />
+		<element firePercent="15" />
+		<element holyPercent="15" />
+		<element icePercent="15" />
+		<element firePercent="15" />
+		<element deathPercent="15" />
+		<element energyPercent="15" />
+	</elements>
+	<immunities>
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="The Falcon reigns supreme!" />
+
+	</voices>
+	<loot>
+		<item id="2152" countmax="6" chance="60680"/><!-- platinum coin -->
+		<item id="7590" countmin="1" countmax="3" chance="22970" /> <!-- Great Mana Potion -->
+		<item id="7591" countmin="1" countmax="3" chance="24190" /> <!-- Great Health Potion -->
+		<item id="7368" countmin="1" countmax="10" chance="15540" /> <!-- Assassin star -->
+		<item id="2145" countmin="1" countmax="3" chance="12970" /> <!-- Small Diamond -->
+		<item id="2149" countmin="1" countmax="3" chance="13920" /> <!-- Small Emerald -->
+		<item id="9970" countmin="1" countmax="3" chance="14730" /> <!-- Small Topaz -->
+		<item id="2150" countmin="1" countmax="3" chance="14050" /> <!-- Small Amethyst -->
+		<item id="2147" countmin="1" countmax="3" chance="13240" /> <!-- small ruby -->
+		<item id="7365" countmin="1" countmax="15" chance="10000" /> <!-- Onyx Arrow -->
+		<item id="2156" chance="1760" /> <!-- Red Gem -->
+		<item id="2153" chance="810" /> <!-- Violet Gem -->
+		<item id="7633" chance="1490" /> <!-- Giant Shimmering Pearl -->
+		<item id="32520" chance="1350" /> <!-- Falcon Crest -->
+		<item id="32518" chance="810" /> <!-- Patch of Fine Cloth -->
+		<item name="damaged armor plates" countmax="3" chance="5330" />
+		<item id="32415" chance="350" /> <!-- Falcon Coif -->
+		<item id="2466" chance="860" /> <!-- Golden Armor -->
+		<item id="2155" chance="3500" /> <!-- Green Gem -->
+	</loot>
+</monster>
